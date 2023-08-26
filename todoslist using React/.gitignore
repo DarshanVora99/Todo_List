@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Notes
+# props --> It is a java script object which we are passing from parent to child component (To pass data from parent to child component )
+
+

@@ -34,8 +34,8 @@ export default function Header(props){
 }
 
 Header.defaultProps = {
-  title: 'Your Title',
-  searchBar : true 
+  title: 'Todos List',
+  searchBar : true, 
 }
 Header.propTypes = {
   title: PropTypes.string,

@@ -1,17 +1,29 @@
-import React from "react";
-import ToDo from "./ToDo";
+import React from 'react'
+import {ToDoItem} from "./ToDoItem";
 
-export default function ToDos(props){
-    return(
+
+export const ToDos = (props) => {
+  return (
+
+    <div className='container'>
+      <h3 className='text-center my-3'>Todos List</h3>
+      
+      {
+      props.todos.length === 0 ? <><h5>No Todos to display</h5></>:
+      props.todos.map((todo)=>{
+
+        return <>
+        <ToDoItem todo= {todo} key={todo.sno} onDelete={props.onDelete}/>
+        <hr />
+        </> 
+      
+      })
+      }
+      
+
+
+    </div>
     
-        // Use to display ToDO
-        <>
-        <div className="container">
-            <h3>ToDOs Lists</h3>
-            
-            <ToDo todoitems={props.allToDos[0]}/>
-            
-        </div>
-        </>
-    );
+  )
 }
+

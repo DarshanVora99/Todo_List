@@ -1,0 +1,20 @@
+# Notes
+# props --> It is a java script object which we are passing from parent to child component (To pass data from parent to child component )
+
+# Good fun below 
+{ props.searchBar?  <form className="d-flex">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button className="btn btn-outline-success" type="submit">Search</button>
+          </form> : ""
+        
+}
+
+# clt w is a shortcut it close open file
+
+
+# BootStrap Notes
+className='text-center my-3'   // Used to center text and add margin from top and botton by 3
+
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+prettier extension good to format our code
